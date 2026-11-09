@@ -1,19 +1,19 @@
 {
   "obsidian": 1,
-  "id": "alomare.sharedresupply",
-  "version": "1.1.0",
+  "id": "alomare.sharedresupply.client",
+  "version": "1.1.0-client.1",
   "name": {
-    "en": "Shared Resupply"
+    "en": "Shared Resupply (Client)"
   },
   "image": "image.png",
   "description": {
-    "en": "Brings the squad resupply from HELLDIVERS 2: a mission stratagem every player carries that drops 4 ammo boxes, on a 180 second cooldown shared by the whole squad. Removes the standard Resupply."
+    "en": "Experimental client-scope variant. Adds a local Resupply stratagem with an individual cooldown and a crate containing 4 ammo boxes."
   },
   "authors": [
-    "Alomare"
+    "Alomare",
+    "Client adaptation: Doffton7Naftalin4"
   ],
-  "scope": "session",
-  "every_player": true,
+  "scope": "client",
   "entry": "main.lua",
   "source": "https://github.com/Alomare/HD1-SharedResupply",
   "modules": [
@@ -48,7 +48,7 @@
         "en": "Preserve vanilla Resupply"
       },
       "description": {
-        "en": "Keep the standard Resupply in the Arsenal and Loadout alongside the shared one."
+        "en": "Keep the standard Resupply in the Arsenal and Loadout alongside the local one."
       }
     }
   ],

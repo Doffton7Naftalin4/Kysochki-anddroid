@@ -1,0 +1,56 @@
+{
+  "obsidian": 1,
+  "id": "alomare.sharedresupply",
+  "version": "1.1.0",
+  "name": {
+    "en": "Shared Resupply"
+  },
+  "image": "image.png",
+  "description": {
+    "en": "Brings the squad resupply from HELLDIVERS 2: a mission stratagem every player carries that drops 4 ammo boxes, on a 180 second cooldown shared by the whole squad. Removes the standard Resupply."
+  },
+  "authors": [
+    "Alomare"
+  ],
+  "scope": "session",
+  "every_player": true,
+  "entry": "main.lua",
+  "source": "https://github.com/Alomare/HD1-SharedResupply",
+  "modules": [
+    "src/stratagem.lua",
+    "src/vanilla.lua",
+    "src/payload.lua",
+    "src/squad.lua"
+  ],
+  "requires": [
+    "obsidian.api"
+  ],
+  "resources": [
+    {
+      "type": "texture",
+      "name": "shared_resupply/shared_resupply_icon",
+      "bundle": "9cf71054ea26dddf",
+      "data": "res/shared_resupply_icon.texture"
+    },
+    {
+      "type": "material",
+      "name": "shared_resupply/icons",
+      "bundle": "9cf71054ea26dddf",
+      "data": "res/icons.material"
+    }
+  ],
+  "options": [
+    {
+      "id": "preserve_vanilla_resupply",
+      "type": "toggle",
+      "default": false,
+      "label": {
+        "en": "Preserve vanilla Resupply"
+      },
+      "description": {
+        "en": "Keep the standard Resupply in the Arsenal and Loadout alongside the shared one."
+      }
+    }
+  ],
+  "loader_api": 1
+}

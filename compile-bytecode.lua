@@ -1,0 +1,8 @@
+local input, output = assert(arg[1], "input path required"), assert(arg[2], "output path required")
+local chunk = assert(loadfile(input))
+local bytes = string.dump(chunk, true)
+assert(bytes:sub(1, 4) == "\27LJ\1", "unexpected bytecode version")
+local file = assert(io.open(output, "wb"))
+assert(file:write(bytes))
+assert(file:close())
+io.stdout:write(string.format("wrote %d bytes, LuaJIT bytecode version 1\n", #bytes))

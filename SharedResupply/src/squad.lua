@@ -16,7 +16,6 @@ function M.new(api, deps)
 		if deps.log then deps.log(text) end
 	end
 
-	-- true once the local player's stratagem list is ready.
 	function c:apply(preserve)
 		local s = api.stratagems
 		local ok, why = s.carry(stratagem.NAME)
@@ -34,7 +33,7 @@ function M.new(api, deps)
 			elseif why == "not_ready" then
 				return false
 			else
-				log_once("code", "Standard Resupply keeps the shared code: " .. tostring(why))
+				log_once("code", "Standard Resupply keeps its original code: " .. tostring(why))
 			end
 		else
 			ok, why = s.hide(vanilla.NAME)

@@ -1,0 +1,70 @@
+HD CAMERA 0.12.2 — INSTALACIÓN AUTOMÁTICA PARA AMIGOS
+
+Mod privado experimental para HELLDIVERS original (2015), Steam,
+Windows, build 6001293. Cada amigo necesita su propia copia del juego.
+
+INSTALAR
+1. Cierra HELLDIVERS.
+2. Extrae TODO el ZIP en una carpeta nueva fuera de Steam, por ejemplo
+   Documentos\HD-Camera-0.12.2. No lo ejecutes desde dentro del ZIP.
+3. Abre esa carpeta y haz doble clic en Instalar.cmd.
+4. Espera el mensaje «Instalado y hash comprobado» y después abre el juego
+   desde Steam. No necesitas abrir el instalador cada vez que juegues.
+
+El instalador busca HELLDIVERS en las bibliotecas de Steam. Detecta Python
+3.10 o superior; si falta, descarga Python oficial de python.org, comprueba
+su SHA-256 y firma de Python Software Foundation, y lo instala para tu
+usuario. Ese primer paso necesita internet. No tienes que instalar Python,
+pip, LuaJIT ni otros paquetes a mano. El compilador va incluido.
+
+Conserva esta carpeta completa después de instalar, especialmente state:
+contiene el respaldo y el recibo necesarios para deshacer la instalación.
+Cada PC genera sus propios archivos a partir de su copia local del juego.
+
+CIELO ESTRELLADO
+Incluye el fondo estrellado para las vistas cercanas. En una misión individual
+con cámara de hombro, el usuario confirmó estrellas visibles y desaparición
+de los rastros del personaje en el cielo. F11 permite comparar con el fondo
+original. Las pruebas en otros mapas y con varios jugadores siguen pendientes.
+
+CONTROLES
+F8: activar o desactivar la cámara individual y separación.
+F9: cambiar entre cenital, hombro y primera persona; activa el mod al pasar
+    a una vista cercana. Al arrancar el juego, el mod empieza apagado.
+F10: activar o desactivar la pose corporal experimental (BODY ON/OFF).
+F11: activar o desactivar el cielo estrellado en las vistas cercanas.
+Botón derecho del ratón: apuntar; cuerpo y arma acompañan la mira.
+Tab: abrir el mapa conservando la vista elegida.
+Vehículos/mecas: cámara cenital individual; al bajar vuelve la vista elegida.
+
+Para probar juntos: todos deben instalar este mismo ZIP en su propio PC,
+entrar en una partida privada y activar F8 o una vista cercana con F9.
+Las pruebas previas de puntería, postura y paneles en 0.11.6 fueron aceptadas.
+La separación y sincronización con varios jugadores online siguen pendientes
+de esa prueba privada. Las poses nuevas de costado/boca arriba no se incluyen.
+
+DESINSTALAR EL MOD
+Cierra HELLDIVERS y ejecuta Restaurar.cmd desde ESTA MISMA carpeta.
+Utiliza la ruta guardada en tu recibo; restaura los archivos originales y
+retira sólo los parches propios verificados. Python queda instalado.
+
+SI YA TENÍAS OTRA VERSIÓN
+Antes de instalar ésta, cierra el juego y ejecuta Restaurar.cmd desde la
+carpeta de la versión anterior. Conserva sus respaldos; no mezcles carpetas.
+
+SI NO ENCUENTRA EL JUEGO O HAY VARIAS COPIAS
+Arrastra la carpeta raíz de HELLDIVERS sobre Instalar.cmd. También puedes
+ejecutar desde una consola, con tu ruta real entre comillas:
+Instalar.cmd "D:\SteamLibrary\steamapps\common\Helldivers"
+Para restaurar se conserva automáticamente esa misma ruta.
+
+Si Windows deniega escritura en la carpeta del juego, cierra el instalador
+y ejecuta Instalar.cmd con «Ejecutar como administrador».
+Si detecta otro build, un mod previo o archivos cambiados, se detiene.
+Conserva el mensaje de error y los respaldos; no fuerces ni borres parches.
+
+COMPARTE ÚNICAMENTE EL ZIP ORIGINAL
+No envíes tu carpeta instalada: build, state y logs contienen archivos
+generados desde tu juego y pueden incluir rutas personales.
+Este ZIP distribuye los fuentes del mod y LuaJIT 2.0.3 con su licencia en
+toolchain\LuaJIT-v2.0.3\COPYRIGHT. No incluye archivos extraídos del juego.

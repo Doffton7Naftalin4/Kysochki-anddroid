@@ -1,0 +1,56 @@
+{
+  "obsidian": 1,
+  "id": "alomare.sharedresupply.client",
+  "version": "1.1.0-client.1",
+  "name": {
+    "en": "Shared Resupply (Client)"
+  },
+  "image": "image.png",
+  "description": {
+    "en": "Experimental client-scope variant. Adds a local Resupply stratagem with an individual cooldown and a crate containing 4 ammo boxes."
+  },
+  "authors": [
+    "Alomare",
+    "Client adaptation: Doffton7Naftalin4"
+  ],
+  "scope": "client",
+  "entry": "main.lua",
+  "source": "https://github.com/Alomare/HD1-SharedResupply",
+  "modules": [
+    "src/stratagem.lua",
+    "src/vanilla.lua",
+    "src/payload.lua",
+    "src/squad.lua"
+  ],
+  "requires": [
+    "obsidian.api"
+  ],
+  "resources": [
+    {
+      "type": "texture",
+      "name": "shared_resupply/shared_resupply_icon",
+      "bundle": "9cf71054ea26dddf",
+      "data": "res/shared_resupply_icon.texture"
+    },
+    {
+      "type": "material",
+      "name": "shared_resupply/icons",
+      "bundle": "9cf71054ea26dddf",
+      "data": "res/icons.material"
+    }
+  ],
+  "options": [
+    {
+      "id": "preserve_vanilla_resupply",
+      "type": "toggle",
+      "default": false,
+      "label": {
+        "en": "Preserve vanilla Resupply"
+      },
+      "description": {
+        "en": "Keep the standard Resupply in the Arsenal and Loadout alongside the local one."
+      }
+    }
+  ],
+  "loader_api": 1
+}
